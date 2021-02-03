@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Youneed || product{% endblock title %}
+
+{% block body %}
+    <div class="container">
+        <form method="POST" action="" enctype="multipart/form-data" novalidate>
+        {% csrf_token %}
+            {{fom.Product_name}}<br><br>
+            {{fom.category}}<br><br>
+            {{fom.Price}}<br><br>
+            {{fom.brand}}<br><br>
+            {{fom.Description}}<br><br>
+            {{fom.image}}<br><br>
+            <button type="submit" class="btn btn-success">SUBMIT</button>
+        </form>
+    </div>
+{% endblock body%}
