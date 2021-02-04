@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'seller',
     'crispy_forms',
     'api',
-    # 'djangorestframework',
+    'rest_framework',
 
     'phonenumber_field',
     'django.contrib.admin',
